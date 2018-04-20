@@ -15,3 +15,12 @@ git add <file>    #添加到暂存区（stage）
         -f <file>  #强制添加至暂存区（可用于添加被忽略的文件）
 git commit  -m "提交说明"  #从暂存区提交至版本库
 ```
+git add 命令可以多次使用，添加多个文件。
+#### 时光穿梭机
+* 查看状态、差异
+```
+git status    #查看工作区状态
+git diff [file]    #比较工作区和暂存区的差异
+git diff --cached [file]    #比较暂存区和版本库的差异
+git diff HEAD [file]    #比较工作区和版本库的差异
+```
