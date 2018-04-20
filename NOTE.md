@@ -24,3 +24,12 @@ git diff [file]    #比较工作区和暂存区的差异
 git diff --cached [file]    #比较暂存区和版本库的差异
 git diff HEAD [file]    #比较工作区和版本库的差异
 ```
+* 版本切换
+```
+git log    #查看提交历史
+git log -1   #查看最后一次提交信息（-2 查看最后两次提交信息）
+        --pretty=oneline    #单行显示提交历史
+        --graph    #显示分支合并图
+        --abbrev-commit    #显示简写的commit_id
+git reflog    #查看所有操作信息，包括删除操作的commit_id
+```
