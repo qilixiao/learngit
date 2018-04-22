@@ -97,13 +97,13 @@ git stash pop [stash@{X}]    #恢复工作状态，并且删除stash内容
 git stash drop [stash@{X}]    #删除stash内容
 ```
 * 多人协作
-使用git push origin branch-name 将本地分支推送至远程，若推送失败则需要先抓取远程的提交
+ > 使用git push origin branch-name 将本地分支推送至远程，若推送失败则需要先抓取远程的提交
 ```
 ##error: failed to push some refs to ...
 git pull    #抓取远程的新提交，并且试图合并
 #如果合并有冲突，则解决冲突，并在本地提交
 ```
-当git pull 命令失败，则说明本地和远程分支的链接关系没有创建
+  > 当git pull 命令失败，则说明本地和远程分支的链接关系没有创建
 ```
 ##error:no tracking information
 git branch --set-upstream branch-name origin/branch-name    #建立本地分支和远程分支的关联
