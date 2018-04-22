@@ -160,5 +160,5 @@ git config alias.ci commit
 git config alias.br branch
 git config alias.unstage 'reset HEAD'
 git config alias.last 'log -1'
-git config alias.lg 'alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"'
+git config alias.lg 'log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit'
 ```
