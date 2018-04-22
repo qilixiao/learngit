@@ -151,3 +151,14 @@ deploy_key_rsa
 `git add -f file    #强制添加被忽略的文件`    
 `git check-ignore -v <file>  #查看忽略该文件的规则`
 > 规则有错时常用上述命令查找定位
+* 配置别名列表
+```
+git config  --global alias.config 'config --global'
+git config alias.st status
+git config alias.co checkout
+git config alias.ci commit
+git config alias.br branch
+git config alias.unstage 'reset HEAD'
+git config alias.last 'log -1'
+git config alias.lg 'alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"'
+```
