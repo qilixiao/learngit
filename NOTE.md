@@ -81,10 +81,19 @@ git pull origin    #拉去远程仓库的内容
 ```
 #### 分支管理
 ```
-git branch    #查看分支
+git branch    #查看现有分支
 git branch name    #创建分支
 git checkout name    #切换分支
-git checkout -b name    #创建并且切换至该分支
+git checkout -b name    #创建并且切换至该分支             
 git mrege name    #合并某分支到当前分支
+          --no-ff name    #禁用fast-foward 快速合并
+          --no-ff -m "提交说明" 
 git branch -d name    #删除分支
+           -D name    #强制删除分支，未合并分支
+git stash    #保存当前工作环境（包括工作区和暂存区）
+git stash list    #查看保存的工作列表
+git stash apply [stash@{X}]    #恢复工作状态，但是不删除stash内容
+git stash pop [stash@{X}]    #恢复工作状态，并且删除stash内容
+git stash drop [stash@{X}]    #删除stash内容
+
 ```
