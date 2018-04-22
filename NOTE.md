@@ -61,5 +61,5 @@ git rm file
 git commit -m "说明"  
 ```
  > rm file 和git rm file 的主要区别：    
-   rm file 仅仅删除了物理文件，并没有将其从git的记录中删除，必须使用git add 命令将修改添加至暂存区
-   git rm file 会同时删除工作区和git记录中的文件
+rm file 仅仅删除了物理文件，并没有将其从git的记录中删除，必须使用git add 命令将修改添加至暂存区    
+git rm file 会同时删除工作区和git记录中的文件
