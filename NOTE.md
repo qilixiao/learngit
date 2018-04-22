@@ -148,6 +148,6 @@ build
 db.ini
 deploy_key_rsa
  ```
-`git add -f file    #强制添加被忽略的文件`
+`git add -f file    #强制添加被忽略的文件`    
 `git check-ignore -v <file>  #查看忽略该文件的规则`
-规则有错时常用上述命令查找定位
+> 规则有错时常用上述命令查找定位
