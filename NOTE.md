@@ -122,3 +122,30 @@ git push origin tag_name    #将标签推送至远程
 git push origin -tags    #将全部未推送过的标签推送至远程
 git push origin:refs/tag/tag_name    #删除一个远程标签（先将本地标签删除，再使用该命令删除远程标签）
 ```
+#### 自定义Git
+```
+git config --global color.ui true    #设置全局颜色显示
+git config --global alias.alias_name command_name    #设置别名
+```
+* 忽略特殊文件
+ > 创建.gitignore文件
+ > 主要内容示例如下：
+ ```
+ # Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# My configurations:
+db.ini
+deploy_key_rsa
+ ```
+`git check-ignore -v <file>  #查看忽略该文件的规则`
