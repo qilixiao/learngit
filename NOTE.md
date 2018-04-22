@@ -79,3 +79,12 @@ git push -u origin master    #第一次推送master分支的内容至远程
 git colne git@server-name:path/repo-name.git    #克隆远程仓库至当前目录
 git pull origin    #拉去远程仓库的内容
 ```
+#### 分支管理
+```
+git branch    #查看分支
+git branch name    #创建分支
+git checkout name    #切换分支
+git checkout -b name    #创建并且切换至该分支
+git mrege name    #合并某分支到当前分支
+git branch -d name    #删除分支
+```
