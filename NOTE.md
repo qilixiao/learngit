@@ -32,4 +32,7 @@ git log -1   #查看最后一次提交信息（-2 查看最后两次提交信�
         --graph    #显示分支合并图
         --abbrev-commit    #显示简写的commit_id
 git reflog    #查看所有操作信息，包括删除操作的commit_id
+git reset --hard commit_id    #切换到指定版本
+git reset --hard HEAD^    #回退到上一版本
+# HEAD表示当前版本   HEAD^表示上一版本   HEAD^表示上上一版本 HEAD~100表示往上100个版本
 ```
