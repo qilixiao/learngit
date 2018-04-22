@@ -108,3 +108,4 @@ git pull    #抓取远程的新提交，并且试图合并
 ##error:no tracking information
 git branch --set-upstream branch-name origin/branch-name    #建立本地分支和远程分支的关联
 ```
+`git checkout -b branch-name origin/branch-name    #在本地创建与远程分支对应的分支，并且本地分支和远程分支的名字最好一致` 
