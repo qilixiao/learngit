@@ -63,3 +63,19 @@ git commit -m "说明"
  > rm file 和git rm file 的主要区别：    
 rm file 仅仅删除了物理文件，并没有将其从git的记录中删除，必须使用git add 命令将修改添加至暂存区    
 git rm file 会同时删除工作区和git记录中的文件
+#### 远程仓库
+* 创建SSH Key
+` ssh-keygen -t -rsa -C "email@example@com"`
+* 添加远程仓库
+```
+git remote add origin git@service-name:path/repo-name.git    #添加远程仓库
+git remote    #查看远程仓库信息
+          -v  #查看详细信息
+git push -u origin master    #第一次推送master分支的内容至远程
+# 除了第一个推送，后续推送不需要加-u 
+```
+* 从远程仓库克隆
+```
+git colne git@server-name:path/repo-name.git    #克隆远程仓库至当前目录
+git pull origin    #拉去远程仓库的内容
+```
