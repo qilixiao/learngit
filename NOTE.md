@@ -45,7 +45,7 @@ git checkout --file    #撤销工作区的修改
 git reset HEAD file    #撤销暂存区的修改
 # 将暂存区的修改撤销掉，使其回到版本库的状态，并且将修改回退到工作区
 ```
-撤销工作区中某个文件的修改，使用命令 git checkout --file
-撤销已经add到暂存区中的某个文件的修改，首先使用命令git reset HEAD file将暂存区的修改回退到工作区，再使用命令git checkout --file丢弃修改
+撤销工作区中某个文件的修改，使用命令 git checkout --file    
+撤销已经add到暂存区中的某个文件的修改，首先使用命令git reset HEAD file将暂存区的修改回退到工作区，再使用命令git checkout --file丢弃修改    
 撤销已经commit到版本库但是没有推送到远程的修改，使用命令git reset --hard commit_id进行版本回退
 
