@@ -49,4 +49,14 @@ git reset HEAD file    #撤销暂存区的修改
 撤销已经add到暂存区中的某个文件的修改，首先使用命令git reset HEAD file将暂存区的修改回退到工作区，再使用命令git checkout --file丢弃修改    
 撤销已经commit到版本库但是没有推送到远程的修改，使用命令git reset --hard commit_id进行版本回退
 * 删除文件
-1. 删除工作区文件，然后提交
+1. 方法一
+```
+rm file     #删除工作区文件
+git add file    #将修改添加至暂存区
+git commit -m "说明"    #将修改提交至版本库
+```
+2. 方法二
+```
+git rm file 
+git commit -m "说明"  
+```
