@@ -109,3 +109,16 @@ git pull    #抓取远程的新提交，并且试图合并
 git branch --set-upstream branch-name origin/branch-name    #建立本地分支和远程分支的关联
 ```
 `git checkout -b branch-name origin/branch-name    #在本地创建与远程分支对应的分支，并且本地分支和远程分支的名字最好一致` 
+#### 标签管理
+```
+git tag    #查看现有标签
+git tag name    #在当前所在的commit新建一个标签
+git tag commit_id    #给指定commit新建标签
+git tag -a tag_name -m "标签说明" commit_id    #给指定commit新建标签，并且添加标签名字和说明等详细信息
+        -s tag_name -m "标签说明" commit_id    #用GPG私钥签名
+        -d tag_name    #删除标签
+git show tag_name    #显示标签信息
+git push origin tag_name    #将标签推送至远程
+git push origin -tags    #将全部未推送过的标签推送至远程
+git push origin:refs/tag/tag_name    #删除一个远程标签（先将本地标签删除，再使用该命令删除远程标签）
+```
